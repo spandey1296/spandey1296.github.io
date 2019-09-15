@@ -166,6 +166,42 @@ text-decoration-style: bold;
 
 }
 
+  
+  
+.typewriter h2 {
+  color: orange;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid red; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: orange }
+  50% { border-color: orange }
+}
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
 
 
@@ -248,9 +284,12 @@ text-decoration-style: bold;
 
             <h1>Hii, I'M SHIVANT PANDEY </h1>
 
-          
+           <div class="typewriter">
+            <h2><strong>Entrepreneur,Leader,<br>Socialist, Good speaker,Application & website Developer,<br>Data Analysis Expert......</strong></h2>
+          </div>
+        
 
-            <h2><strong>Entrepreneur,Leader, Socialist, Good speaker,Application & website Developer,Data Analysis Expert......</strong></h2>
+           
         </div>
     
         <ul class="slideshow">
