@@ -1,196 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title></title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
+
+
 body {
-  font-family: "Lato", sans-serif
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.mySlides {
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
   display: none;
 }
-.div{
-  color: red;
 
-}
-
-.fa {
-  padding:10px;
-  font-size: 30px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  
-}
-
-
-.fa:hover {
-  opacity: 0.7;
-  color:#E17C67;
-}
-
-
-
-
-.split {
-  height: 50%;
-  width: 50%;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 10px;
-}
-
-.left {
-  left: 0;
-  background-color:#B6EA54;
-}
-
-.right {
-  right: 0;
-  background-color: red;
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered img {
-  width: 150px;
-  border-radius: 50%;
-}
-
-
-
-#landing-header {
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  padding-top: 40vh;
-}
-
-#landing-header h1 {
-  color: red;
-  font-size: 50px;
-  font-weight: 700;
-  font-style: bold;
-
-}
-
-.slideshow { 
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.slideshow li { 
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  opacity: 0;
-  z-index: 0;
-  animation: imageAnimation 20s linear infinite; 
-}
-
-.slideshow li:nth-child(1) { 
-  background-image: url(http://i.imgur.com/K3mPv14.jpg) 
-}
-.slideshow li:nth-child(2) { 
-  background-image: url(http://i.imgur.com/SBEmFpv.jpg);
-  animation-delay: 10s; 
-}
-.slideshow li:nth-child(3) { 
-  background-image: url(http://i.imgur.com/emvhOnb.jpg);
-  animation-delay: 10s; 
-}
-.slideshow li:nth-child(4) { 
-  background-image: url(http://i.imgur.com/2LSMCmJ.jpg);
-  animation-delay: 10s; 
-}
-.slideshow li:nth-child(5) { 
-  background-image: url(http://i.imgur.com/TVGe0Ef.jpg);
-  animation-delay: 10s; 
-}
-
-@keyframes imageAnimation { 
-  0% { 
-    opacity: 0; 
-    animation-timing-function: ease-in;
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
   }
-  10% {
-    opacity: 1;
-    animation-timing-function: ease-out;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  20% {
-    opacity: 1
-  }
-  30% {
-    opacity: 0
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
 
 
-.no-cssanimations .slideshow li {
-    opacity: 1;
-}
-
-h2{
-
-  color: #13b4d4;
-  text-shadow:hsla();
-text-decoration-style: bold;
 
 
-}
-
-  
-  
-.typewriter h2 {
-  color: orange;
-  font-family: monospace;
-  overflow: hidden; 
-  border-right: .15em solid red; 
-  white-space: nowrap; 
-  margin: 0 auto; 
-  letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(30, end),
-    blink-caret .3s;
-}
 
 
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -201,47 +97,20 @@ text-decoration-style: bold;
 
 </style>
 <body>
+    <div class="topnav" id="myTopnav">
+        <a href="portfolio.html" class="active">Home</a>
+        <a href="https://docs.google.com/presentation/d/1B40XXdcn7l-LBXoYCfp66exZllCfvlCaWFmDjD_kBeE/edit?usp=sharing">About us</a>
+        <a href="https://future974882407.wordpress.com/blog/">My Blog</a>
+        <a href="https://future974882407.wordpress.com/contact/">Enquiry Form</a>
+        <a href="https://mail.google.com/mail/u/0/?tab=wm#inbox">Email</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
 
 
-
-
-<nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">My Profile</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#"><strong>Home</strong></a></li>
-           <li><a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">Email</a></li>
-
-
+      <img src="template.jpg">
       
-      <li><a href="https://future974882407.wordpress.com/blog/"><strong>My Blog</strong></a></li>
-       <li><a href="./Photo.html"><strong>Photos</strong></a></li>
-      <li><a href="./contact.html"><strong>Contact</strong></a></li>
-    </ul>
-  </div>
-</nav>
-  
-<div class="container" style="margin-top:50px">
-  <h3></h3>
-  <div class="row">
-    <div class="col-md-4">
-      <p></p>
-      <p></p>    
-    </div>
-    <div class="col-md-4"> 
-      <p></p>
-      <p></p>
-    </div>
-    <div class="col-md-4"> 
-      <p></p>
-      <p></p> 
-    </div>
-  </div>
-</div>
-
-<h1></h1>
 
 
 
@@ -263,31 +132,8 @@ text-decoration-style: bold;
 
 
 
-<div class="container">
-            
-            
-        </div>
-    
-        <div id="landing-header">
-            <img src="./PERSONAL.jpg" align="center" width="200px" height="200px">
 
-            <h1>Hii, I'M SHIVANT PANDEY </h1>
 
-           <div class="typewriter">
-            <h2><strong>Entrepreneur,<br>Leader,<br>Socialist,<br> Good speaker,<br>Application & <br>website Developer,<br>Data Analysis <br>Expert......</strong></h2>
-          </div>
-        
-
-           
-        </div>
-    
-        <ul class="slideshow">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
 
 
 
@@ -303,45 +149,39 @@ text-decoration-style: bold;
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <a href="https://www.facebook.com/ashwini.pandey.376"><i class="fa fa-facebook-official w3-hover-opacity fa-2x"></i></a>
-  <a href="https://instagram.com/pandeyshivant?igshid=gougzank1gxh"><i class="fa fa-instagram w3-hover-opacity fa-2x"></i></a>
+  <a href="https://www.facebook.com/groups/714004659022843/?ref=bookmarks"><i class="fa fa-facebook-official w3-hover-opacity fa-3x"></i></a>
+  <a href="https://instagram.com/pandeyshivant?igshid=gougzank1gxh"><i class="fa fa-instagram w3-hover-opacity fa-3x"></i></a>
 
-  <a href="https://wa.me/917277921877text=Thanks for connecting with me.Hope You will Enjoy"><i class="fa fa-whatsapp w3-hover-opacity fa-2x"></i></a>
+  <a href="https://wa.me/917277921877text=Thanks for connecting with me.Hope You will Enjoy"><i class="fa fa-whatsapp w3-hover-opacity fa-3x"></i></a>
 
-  <a href=""><i class="fa fa-pinterest-p w3-hover-opacity fa-2x"></i></a>
-  <a href="https://twitter.com/shivant6"><i class="fa fa-twitter w3-hover-opacity fa-2x" ></i></a>
+  <a href=""><i class="fa fa-pinterest-p w3-hover-opacity fa-3x"></i></a>
+  <a href="https://twitter.com/shivant6"><i class="fa fa-twitter w3-hover-opacity fa-3x" ></i></a>
 
- <a href="https://www.linkedin.com/in/shivant-pandey-6469a1164"><i class="fa fa-linkedin w3-hover-opacity fa-2x"></i></a>
- <a href="https://github.com/spandey1296"><i class="fa fa-github w3-hover-opacity fa-2x"></i></a>
- <a href="https://www.youtube.com/channel/UCLQMdDxySQP23-DGgtpeJqQ"><i class="fa fa-youtube w3-hover-opacity fa-2x"></i></a>
+ <a href="https://www.linkedin.com/in/shivant-pandey-6469a1164"><i class="fa fa-linkedin w3-hover-opacity fa-3x"></i></a>
+ <a href="https://github.com/spandey1296"><i class="fa fa-github w3-hover-opacity fa-3x"></i></a>
+ <a href="https://www.youtube.com/channel/UCLQMdDxySQP23-DGgtpeJqQ"><i class="fa fa-youtube w3-hover-opacity fa-3x"></i></a>
  
 </footer>
 
 
-
-     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+
+
+
+
+
+
 
 </script>
-
 </body>
 </html>
