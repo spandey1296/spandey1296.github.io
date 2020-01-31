@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -120,23 +120,74 @@ body {
        color:#4183D7;
   }
   
-  .container_des{
-    display:flex;
-    justify-content:space-around;
-    background-color:white;
-    align-items:center;
-    text-align:center;
-  }
-  .container-box{
-    width:20%;
-   padding:10px;
-    border:1px solid #ccc;
-    box-shadow:0px 0px 0px 1px #ddd;
-  }
-  
-  .carousel-inner img {
-    width: 100%;
-    height: 100%;
+
+
+/* ANIMINATION */
+
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
@@ -144,46 +195,76 @@ body {
 
 
 
-
-
-.mySlides {
-  display:none;
-  height: 100%;
-  width:100%;
-}
 
 
 
 
 
 </style>
-
-
-
-
-
 <body>
-
-
-  
 <div class="pill-nav">
         <a class="active" href="#home">HOME</a>
         <a id="avx"  href="#news">STREAM</a>
         <a id="acs"  href="#contact">CLASSWORK</a>
         <a id="abc" href="#about">PEOPLE</a>
-        <a id="myId" href="#home">SIGNUP</a>
-        <a id="zxc" href="#about">SIGN IN</a>
+        <a id="myId" href="#home">BLOG</a>
+        <a id="zxc" href="#about">PORTFOLIO</a>
 </div><br><br>
 
-<div class="w3-container">
-  <div class="w3-content w3-section">
-    <img class="mySlides w3-animate-top" src="https://lh3.googleusercontent.com/0Mw1TiqRiQ2bbGPqCkiX5tMblwdRqm7LqTRcvGtgEri0rZM7fKGOPM6wBa4iDNCBPnYkxfecQxXomaIgSp0fRtxHdkGiTZoQ4XiB7pOuqr2dCC1pEZkXBLnS_TUnKbF4gI-YzMYK23hfrgBKRHIPVojfZB-arQsWJGfLU7TDnIryxxSto1sO1kKqbp8Ro-IvtKT5KqNR5ytMyE5xyiADjeDGYePz0yOT7JziEtozzo4Ed939srtBId9Iy4IjzuOa6kbdqJbLFeo5hf6eFSuUXVSXQC8erOcsHv0kTQgehFen7J2Oq7Torjlrx79gftqTf48rlkiDZ3CM49cGI80HxPbWyfFZM6kHJG3UkmU_37DS75W55G-r1r5EliwJBEyInwe9W13TxZhzsVnCSxhZ9mn785_ot2YYW8MPo2pJ5nRqPtQVh63feV7RzVLsnESJ9X38oPLtqhm2Jl5Rlt_FwK1xaPT1WzBux2On1fnoa00g811-geu2SvFmDHHCtIf_gwGYIQzYnnHkysDYHpYGwBv5RVprNjOEVmIPgcDmI0QuUkZtl6XCT1VsQNwZe50ukoQWwJE82IazVmwegleQsEf6XV9bLTo2ULr_Q6_pgLNpgK4ShJLX2aSaZZpGLbRcVRp2j6aaPfl7Z49R-S-CSJoOIrehWR5btx25spDPBucCDSpRJOBqx4c-=w526-h296-no" width="200px" height="200px">
-    <img class="mySlides w3-animate-top" src="https://lh3.googleusercontent.com/egLOagW0nHO8gL3jnu1dbzJ2L_L0Mn0miH-HWPWRDjUJffYc5p3siV1GYT3O5bED380sx3kIyVDb4e6TaOVJGWKtyn33SY4T5Ou_0zDtgI9DYKDNKfrgWtpPHRnsaQWa9LpV9z8yxkKj3AD_fVwSEN087W0hEOCFfBgNe_SGRDLtssnbI3h-mN53_NBTqUVso0awWCF4wNLrVB5jTnM87kWhZTanIqs7-Y0YCr3EXAA6r1IrzOFOoVa646SvfhITm0368Lq9M93D4JAl3e8YuSKZUJvCTgqtQcbO-rfAwmjcDs19PtToitNkL2iAG8lwdz-FkKv3lldrwgugkCZAHjMAJPo33hn_8qfg6QLlf3JG5tq1kUuSJTnOVrTAMUZFkyIpn67-LEf5CmYhtcOBqwKX9CMGaOshTuIwP8BCE0XMAwcs-5HoWRpkRYWdzwsQzFHbcIRgK-YxH5sbjDNu0W80Q3ByAL3M-1clqB6WynvFhPNq_f6QifCsJDLXwkmAIl1FoeWdh633MrjhAsB7LLpUfKPw9nzvoMjaSFVZGdRi64WUR2iMXV01Z2xQp7JOwsovac7DylfLq0B-IDVqMutXW4ZgDPzK8yNtPRUqX5PicgekxyUdXnSDBsgSkzVqXRk1D_vjU0BYBTI0RfUq4RNgQ7a8dboczs6CjjqcvuyPD1l-vKz3HcpC=w1607-h903-no" width="200px" height="200px" >
 
-    <img class="mySlides w3-animate-top" src="https://lh3.googleusercontent.com/2NbFc3J6epNah_FbO7aEevvsMd8YbW160dY7c5TBqXbrxE_W81sGivjgJz__o6Hw6BYFKUVdSFoO0BB0dBgB2sfMw5_aR_WK9b49h1WV_ecwmdiYcx6QapXi6qt1DMPImr7wdI-CbM76PeJy8aUje2PB-UABqz0kC9vg7665PPsLlaJJhoOxe14I1y2PEyFPO9lL_abje6v1q-fQELxVpfTRxwEFgPtC5eb4V1c2wThkCPVeE7hO8BzI-RvLFcVC1pXPbMChTouDU-hjvhl8YPvu1aYGF0TwitJuNURz0ByNrSiokmGg-eZDlzTwJwPt9S7D2dod8502-6PkHax6mP9HKbCCOHH_pUAIOzs1M0NP4VccPcCsvF9sCXwNF1pG3dvd0eVc_fPWTqn0M5B2DHp8LP82PIDdo6q061ryuca_Rk6tftrRQweHB_ITXPfqyzNQ0HeZ1V3nQTSKk5_jfJZahteIWk2mZ_QYlNiAgfvVr3OvKmt_Ws6i3uNXl6V-2ILLcn4uWehygrBnmBb8zvroahmJBIlEGDlJE2Y8nzQAIaTdVo25rxNcUYoqUi2SC0U-ktfrNARGoR-Xhqh_4D26j8UuIKQPtpzCYcnMOwTu43Q6s1_V2JbqTQI0O5pPrcSMaQkUN-EmI5ud8mzIUzp5gueF5UpscF6xJOBhtYesdKiymhwpyAD9=w1640-h664-no" width="200px" height="800px">
+
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+   
+    <img src="https://lh3.googleusercontent.com/0Mw1TiqRiQ2bbGPqCkiX5tMblwdRqm7LqTRcvGtgEri0rZM7fKGOPM6wBa4iDNCBPnYkxfecQxXomaIgSp0fRtxHdkGiTZoQ4XiB7pOuqr2dCC1pEZkXBLnS_TUnKbF4gI-YzMYK23hfrgBKRHIPVojfZB-arQsWJGfLU7TDnIryxxSto1sO1kKqbp8Ro-IvtKT5KqNR5ytMyE5xyiADjeDGYePz0yOT7JziEtozzo4Ed939srtBId9Iy4IjzuOa6kbdqJbLFeo5hf6eFSuUXVSXQC8erOcsHv0kTQgehFen7J2Oq7Torjlrx79gftqTf48rlkiDZ3CM49cGI80HxPbWyfFZM6kHJG3UkmU_37DS75W55G-r1r5EliwJBEyInwe9W13TxZhzsVnCSxhZ9mn785_ot2YYW8MPo2pJ5nRqPtQVh63feV7RzVLsnESJ9X38oPLtqhm2Jl5Rlt_FwK1xaPT1WzBux2On1fnoa00g811-geu2SvFmDHHCtIf_gwGYIQzYnnHkysDYHpYGwBv5RVprNjOEVmIPgcDmI0QuUkZtl6XCT1VsQNwZe50ukoQWwJE82IazVmwegleQsEf6XV9bLTo2ULr_Q6_pgLNpgK4ShJLX2aSaZZpGLbRcVRp2j6aaPfl7Z49R-S-CSJoOIrehWR5btx25spDPBucCDSpRJOBqx4c-=w526-h296-no" style="width:100%" height="200px">
+   
+  </div>
+  
+  <div class="mySlides fade">
+    
+    <img src="https://lh3.googleusercontent.com/egLOagW0nHO8gL3jnu1dbzJ2L_L0Mn0miH-HWPWRDjUJffYc5p3siV1GYT3O5bED380sx3kIyVDb4e6TaOVJGWKtyn33SY4T5Ou_0zDtgI9DYKDNKfrgWtpPHRnsaQWa9LpV9z8yxkKj3AD_fVwSEN087W0hEOCFfBgNe_SGRDLtssnbI3h-mN53_NBTqUVso0awWCF4wNLrVB5jTnM87kWhZTanIqs7-Y0YCr3EXAA6r1IrzOFOoVa646SvfhITm0368Lq9M93D4JAl3e8YuSKZUJvCTgqtQcbO-rfAwmjcDs19PtToitNkL2iAG8lwdz-FkKv3lldrwgugkCZAHjMAJPo33hn_8qfg6QLlf3JG5tq1kUuSJTnOVrTAMUZFkyIpn67-LEf5CmYhtcOBqwKX9CMGaOshTuIwP8BCE0XMAwcs-5HoWRpkRYWdzwsQzFHbcIRgK-YxH5sbjDNu0W80Q3ByAL3M-1clqB6WynvFhPNq_f6QifCsJDLXwkmAIl1FoeWdh633MrjhAsB7LLpUfKPw9nzvoMjaSFVZGdRi64WUR2iMXV01Z2xQp7JOwsovac7DylfLq0B-IDVqMutXW4ZgDPzK8yNtPRUqX5PicgekxyUdXnSDBsgSkzVqXRk1D_vjU0BYBTI0RfUq4RNgQ7a8dboczs6CjjqcvuyPD1l-vKz3HcpC=w1607-h903-no" style="width:100%" height="200px">
   
   </div>
+  <div class="mySlides fade">
+    
+      <img src="https://lh3.googleusercontent.com/2NbFc3J6epNah_FbO7aEevvsMd8YbW160dY7c5TBqXbrxE_W81sGivjgJz__o6Hw6BYFKUVdSFoO0BB0dBgB2sfMw5_aR_WK9b49h1WV_ecwmdiYcx6QapXi6qt1DMPImr7wdI-CbM76PeJy8aUje2PB-UABqz0kC9vg7665PPsLlaJJhoOxe14I1y2PEyFPO9lL_abje6v1q-fQELxVpfTRxwEFgPtC5eb4V1c2wThkCPVeE7hO8BzI-RvLFcVC1pXPbMChTouDU-hjvhl8YPvu1aYGF0TwitJuNURz0ByNrSiokmGg-eZDlzTwJwPt9S7D2dod8502-6PkHax6mP9HKbCCOHH_pUAIOzs1M0NP4VccPcCsvF9sCXwNF1pG3dvd0eVc_fPWTqn0M5B2DHp8LP82PIDdo6q061ryuca_Rk6tftrRQweHB_ITXPfqyzNQ0HeZ1V3nQTSKk5_jfJZahteIWk2mZ_QYlNiAgfvVr3OvKmt_Ws6i3uNXl6V-2ILLcn4uWehygrBnmBb8zvroahmJBIlEGDlJE2Y8nzQAIaTdVo25rxNcUYoqUi2SC0U-ktfrNARGoR-Xhqh_4D26j8UuIKQPtpzCYcnMOwTu43Q6s1_V2JbqTQI0O5pPrcSMaQkUN-EmI5ud8mzIUzp5gueF5UpscF6xJOBhtYesdKiymhwpyAD9=w1640-h664-no" style="width:100%" height="200px">
+    
+    </div>
+  
+  
   </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -219,10 +300,10 @@ body {
           </div>
                       
           <div class="text">
-           <a href=""><b><span id="sp">GO TO COURSE HANDOUT</span></b></a>
+           <a href="https://classroom.google.com/w/NDcxODQ4MTE0NjBa/tc/NDc0NzgyOTAyNDla"><b><span id="sp">GO TO COURSE HANDOUT</span></b></a>
           </div>
                       
-           <a href="#"><button style="background-color:orange;">Register Here</button></a>                      
+           <a href="https://classroom.google.com/w/NDcxODQ4MTE0NjBa/tc/NDc0NzgyOTAyNDla"><button style="background-color:orange;">Register Here</button></a>                      
          </div>
       </div>
       <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -364,6 +445,42 @@ body {
     x[myIndex-1].style.display = "block";  
     setTimeout(carousel, 2500);    
   }
+
+
+
+
+
+
+  var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+
+
+
+
+
+
+
+
+
+
   </script>
 
 
