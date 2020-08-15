@@ -3,6 +3,11 @@
 
 # My Certificate and Achievement:
 
+![data-science-foundations-level-1](https://user-images.githubusercontent.com/50301680/90318222-bd05bd80-df4c-11ea-969b-69854a11b349.png)
+
+![DATA SCIENCE](https://user-images.githubusercontent.com/50301680/90318224-c2630800-df4c-11ea-90ca-dfb3e0939f99.png)
+
+
 ![aws certification for attnedee](https://user-images.githubusercontent.com/50301680/89097658-8da86a00-d3fe-11ea-9ee5-7afbfe098f09.png)
 
 ![campus ambassador](https://user-images.githubusercontent.com/50301680/89097665-9d27b300-d3fe-11ea-8a7a-48957ab9040b.png)
