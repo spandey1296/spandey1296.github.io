@@ -3,6 +3,10 @@
 
 # My Certificate and Achievement:
 
+
+![GDG](https://user-images.githubusercontent.com/50301680/97034204-270c9580-1582-11eb-9ba6-12fc716e6fe0.jpg)
+
+
 ![data-science-foundations-level-1](https://user-images.githubusercontent.com/50301680/90318222-bd05bd80-df4c-11ea-969b-69854a11b349.png)
 
 ![DATA SCIENCE](https://user-images.githubusercontent.com/50301680/90318224-c2630800-df4c-11ea-90ca-dfb3e0939f99.png)
